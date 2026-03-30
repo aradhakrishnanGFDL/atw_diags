@@ -14,7 +14,8 @@ This script requires specific Python modules. You can install the requirements v
 ```bash
 # Recommended Conda environment setup
 conda create -n spear-analysis -c conda-forge xarray numpy matplotlib cartopy xesmf netcdf4
-conda activate spear-analysis```
+conda activate spear-analysis
+```
 
 ## How to run
 * Run the ferret_test_final.ipynb notebook.
