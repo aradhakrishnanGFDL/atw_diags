@@ -1,7 +1,7 @@
 # Pythonized SPEAR model diagnostic tool for Ferret-based scripts
 
 ## Overview
-This repository contains Python-based diagnostic tools for SPEAR variables. Currently, this script contains pythonized Sea Surface Temperature (SST / `t_surf`) bias diagnostic tool that compares SPEAR-Hi outputs against observational OISST datasets. The pythonized scripts are based on Ferret scripts from Andrew Wittenberg (NOAA-federal).
+This repository contains Python-based diagnostic tools for SPEAR variables. Currently, this script contains pythonized Sea Surface Temperature (SST / `t_surf`) bias diagnostic tool that compares SPEAR-Hi outputs against observational OISST datasets. The pythonized scripts are based on Ferret scripts from Andrew Wittenberg.
 
 ## Key Mathematical Features
 
