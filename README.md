@@ -5,7 +5,7 @@ This repository contains Python-based diagnostic tools for SPEAR variables. Curr
 
 ## Key Mathematical Features
 
-* **Bilinear/Conservative Regridding:** Uses `xESMF` bilinear/conservative interpolation to map the SPEAR ocean pixels onto the 1°x1° OISST grid without triggering off-planet boundary crashes (-90.5/90.5).
+* **Bilinear/Conservative Regridding:** Uses `xESMF` bilinear/conservative interpolation to map the SPEAR ocean pixels onto the 1°x1° OISST grid.
 * **Diagnostic Stats:** Generates basic statistics for model comparison with observation.
 
 ## Dependencies
