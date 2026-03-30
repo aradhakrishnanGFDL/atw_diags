@@ -1,0 +1,6 @@
+xarray
+numpy
+xesmf
+matplotlib
+cartopy
+cf_xarray

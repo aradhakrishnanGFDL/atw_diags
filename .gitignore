@@ -1,0 +1,11 @@
+# Ignore NetCDF data files
+*.nc
+
+# Ignore generated plots
+*.png
+*.jpg
+*.pdf
+
+# Ignore Python cache
+__pycache__/
+*.pyc
