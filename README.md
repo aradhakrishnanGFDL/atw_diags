@@ -50,9 +50,15 @@ conda activate spear-analysis
 
 ## Development Timeline
 
-Foundation        ██████████
-Efficiency             ██████████
-Workflows              ███████████████
-Validation                  █████████████
-Portability                      █████████
+## Development Timeline
 
+**Phases**
+
+1. Foundation  
+2. Efficiency *(parallel)*  
+3. Reproducible & Flexible Workflows *(parallel)*  
+4. Validation *(continuous)*  
+5. Portability
+   
+Efficiency and workflow development proceed in parallel; validation spans all phases.
+User engagement throughout.
