@@ -1,17 +1,15 @@
-rule all:
+rule sst_notebook:
     input:
-        "outputs/noname.png"
-
-rule sst_bias:
-    input:
-        model="data/tba.nc",
-        obs="data/tba.nc"
+        "data/input.nc"
     output:
-        "outputs/t_surf_final_replica.png"
+        "results/output.nc",
+        "diagnostics/atw_atmos_ts_monthly_sfc_ocean_executed.ipynb"
+    params:
+        notebook="diagnostics/atw_atmos_ts_monthly_sfc_ocean.ipynb"
     shell:
         """
-        python scripts/atw_atmos_ts_monthly_sfc_ocean.py \
-            --model {input.model} \
-            --obs {input.obs} \
-            --output {output}
+        papermill {params.notebook} {output[1]} \
+        -p input_file {input} \
+        -p output_file {output[0]}
         """
+
