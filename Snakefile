@@ -1,15 +1,16 @@
-rule sst_notebook:
-    input:
-        "data/input.nc"
+rule run_notebook:
     output:
-        "results/output.nc",
+        config["output_file"],
         "diagnostics/atw_atmos_ts_monthly_sfc_ocean_executed.ipynb"
     params:
-        notebook="diagnostics/atw_atmos_ts_monthly_sfc_ocean.ipynb"
+        nb=config["notebook"],
+        inp=config["input_file"],
+        out=config["output_file"],
+        var=config["variable"]
     shell:
         """
-        papermill {params.notebook} {output[1]} \
-        -p input_file {input} \
-        -p output_file {output[0]}
+        papermill {params.nb} diagnostics/atw_atmos_ts_monthly_sfc_ocean.ipynb \
+        -p input_file {params.inp} \
+        -p output_file {params.out} \
+        -p variable {params.var}
         """
-
