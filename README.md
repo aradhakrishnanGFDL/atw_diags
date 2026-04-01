@@ -50,8 +50,6 @@ conda activate spear-analysis
 
 ## Development Timeline
 
-## Development Timeline
-
 **Phases**
 
 1. Foundation  
