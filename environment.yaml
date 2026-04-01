@@ -1,0 +1,16 @@
+name: notebook-env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - xarray
+  - numpy
+  - xesmf
+  - matplotlib
+  - cartopy
+  - cf_xarray
+  - dask
+  - netcdf4
+  - papermill
