@@ -2,6 +2,8 @@
 
 ## Overview
 This repository contains Python-based diagnostic tools for SPEAR variables. 
+The original code is in Ferret, written by Andrew Wittenberg. This is an example of pythonization of an example suite of analysis,
+applying best practices from a user, high-resolution data and institutional workflow perspective.
 
 ---
 
@@ -20,9 +22,17 @@ Pythonized diagnostic suites for SPEAR data analysis and evaluation.
 
 ## atw_atmos_ts_monthly_sfc_ocean
 
-Sea Surface Temperature (SST / `t_surf`) bias diagnostic tool comparing SPEAR-Hi outputs against observational OISST datasets.
+Sea Surface Temperature ( `t_surf`) bias diagnostic tool comparing SPEAR-Hi outputs against observational OISST datasets.
 
 These Python scripts are adapted from original Ferret-based diagnostics developed by Andrew Wittenberg, with enhancements for reproducibility and integration into modern workflows.
+
+The name of the analysis script is self-descriptive: 
+
+atw - lead_author initials
+atmos - post-processing component for data
+ts - time-series
+monthly - frequency of data 
+sfc_ocean = surface ocean field
 
 Key Features
 
