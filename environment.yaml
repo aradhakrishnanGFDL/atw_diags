@@ -1,16 +1,12 @@
-name: notebook-env
-
+name: spear-analysis
 channels:
   - conda-forge
-
 dependencies:
-  - python=3.10
   - xarray
   - numpy
-  - xesmf
   - matplotlib
   - cartopy
-  - cf_xarray
-  - dask
+  - xesmf
   - netcdf4
-  - papermill
+  - intake
+  - intake-esm
