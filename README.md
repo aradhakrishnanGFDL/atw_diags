@@ -50,13 +50,18 @@ This script requires specific Python modules. You can install the requirements v
 
 ```bash
 # Recommended Conda environment setup
-conda create -n spear-analysis -c conda-forge xarray numpy matplotlib cartopy xesmf netcdf4
+conda env create -n spear-analysis -f environment.yaml
 conda activate spear-analysis
 ```
 
 ## How to run
-* Run the ferret_test_final.ipynb notebook.
-* If you want to apply the "conservative" regridding, change the argument inside the xe.Regridder function from "bilinear" to "conservative".
+Run the ferret_test_final.ipynb notebook after starting JupyterLab. If you want to apply the "conservative" regridding, change the argument inside the xe.Regridder function from "bilinear" to "conservative".
+
+```bash
+# Start JupyterLab
+conda activate spear-analysis
+jupyter lab
+```
 
 ## Development Timeline
 
