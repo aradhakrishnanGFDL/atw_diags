@@ -1,0 +1,23 @@
+{
+  "pod_list" : [
+     "atw_atmos_ts_monthly_sfc_ocean_updated"
+   ],
+  "case_list": {
+    "SPEAR-HI_8": {
+      "convention": "GFDL",
+      "enddate": "03981231000000",
+      "model": "SPEAR_HI_8",
+      "startdate": "00010101000000",
+      "frequency": "mon",
+      "static_vars": [
+        "land_mask",
+        "frac_ocean"
+      ]
+    }
+  },
+  "DATA_CATALOG": "/home/a1r/git/atw/atw_diags/cats/ciheim/48-SPEAR-cat.json",
+  "OBS_DATA_ROOT": "/home/atw/data/reynolds/v2/noaa.oisst.v2/",
+  "OBS_FILE_PATH": "/home/atw/data/reynolds/v2/noaa.oisst.v2/sst_janstart.nc",
+  "WORK_DIR": "/home/a1r/git/atw/atw_diags/outputs/",
+  "OUTPUT_DIR": "/home/a1r/git/atw/atw_diags/outputs/"
+}

@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "description": "SPEAR Model vs OISST Surface Temperature Analysis",
+    "driver": "atw_atmos_ts_monthly_sfc_ocean.py",
+    "long_name": "Monthly Surface Temperature Diagnostics",
+    "convention": "GFDL",
+    "PLOT_TITLE_MODEL": "SPEAR Model (Years 0001-0100)",
+    "PLOT_TITLE_OBS": "OISST Observations (1982-2016)",
+    "CBAR_LABEL": "SST (°C)",
+    "SST_LINE_LEVELS": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33],
+    "SST_SHADE_LEVELS": [16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5, 22.0, 22.5, 23.0, 23.5, 24.0, 24.5, 25.0, 25.5, 26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5, 30.0, 30.5, 31.0, 31.5, 32.0, 32.5, 33.0],
+    "BIAS_LINE_LEVELS": [-5, 5.5, 0.5],
+    "BIAS_TICK_INTERVAL": [-5, 6, 1],
+    "BIAS_SHADE_LEVELS": [-5.0, -4.75, -4.5, -4.25, -4.0, -3.75, -3.5, -3.25, -3.0, -2.75, -2.5, -2.25, -2.0, -1.75, -1.5, -1.25, -1.0, -0.75, -0.5, -0.25, 0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0]
+},
+  "dimensions": {
+    "lat": {
+      "standard_name": "latitude",
+      "axis": "Y",
+      "LAT_BOUNDS": [-20, 20]
+    },
+    "lon": {
+      "standard_name": "longitude",
+      "axis": "X",
+      "LON_BOUNDS": [25, 385]
+    },
+    "time": {
+      "standard_name": "time",
+      "MODEL_TIME_SLICE": [0, 1200],
+      "OBS_TIME_SLICE": ["1982", "2016"]
+    }
+  },
+  "varlist": {
+    "vars": {
+      "freq": "mon",
+      "realm": "atmos",
+      "chunk_freq": "10yr",
+      "MODEL_VAR": "t_surf",
+      "OBS_VAR": "SST",
+      "MODEL_OFFSET": -273.15,
+      "dimensions": [
+        "time",
+        "lat",
+        "lon"
+      ]
+    },
+    "STATIC_VARS": {
+      "freq": "fx",
+      "realm": "atmos",
+      "STATIC_VARS": [
+        "land_mask",
+        "frac_ocean"
+      ],
+      "dimensions": [
+        "lat",
+        "lon"
+      ]
+    }
+  }
+}
